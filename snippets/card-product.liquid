@@ -121,6 +121,7 @@
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
                 {{ card_product.title | escape }}
+                <span class="card__heading-sku">{{ card_product.selected_or_first_available_variant.sku }}</span>
               </a>
             </h3>
           </div>
